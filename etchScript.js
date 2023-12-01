@@ -12,6 +12,11 @@ function promptGridSize() {
     return prompt('What Size?');
 }
 
+//mouseover hanldler
+function handleMouse() {
+    this.style.backgroundColor = 'black'
+}
+
 //function to greate grid 
 function createGrid (gridSize) {
     //rows
