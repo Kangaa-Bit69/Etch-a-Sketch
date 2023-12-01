@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.pixel {   
+    min-height: 10px;
+    min-width: 10px; 
+    max-height: 75px;
+    max-width: 75px;
+    margin: 1px;      
+    background-color: rgb(255, 255, 255);  
+      
+}
+
+.row {
+    display: flex;
+    margin: 5px;
+    background-color: blue;
+}
+.grid {
+    flex-direction: row;
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    outline-style: dashed;
+    justify-content: center;
+    align-items: center;
+}

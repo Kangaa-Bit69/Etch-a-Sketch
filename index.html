@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title> Etch-a-Sketch </title>
+    <script src="etchScript.js" defer></script>
+    <link rel="stylesheet" href="etchStyle.css"> 
+</head>
+<body>
+    <script>
+    window.onload = (event) =>{
+    createGrid(16); }
+</script>
+    <div class="grid"></div>
+    <button onclick= " grid.replaceChildren(), createGrid(promptGridSize())">Change Canvas Size</button>
+      
+</body>
+</html>
