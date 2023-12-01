@@ -30,11 +30,9 @@ function createGrid (gridSize) {
             pixel.className=(`pixel`);
             pixel.addEventListener('mouseover',  handleMouse);                                  
             row.append(pixel);
-            fragment.appendChild(row);
-            
+            fragment.appendChild(row);            
         } 
-    }
-    grid.appendChild(fragment);
+    } grid.appendChild(fragment);
     
 }
 
