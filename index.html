@@ -6,11 +6,8 @@
     <script src="etchScript.js" defer></script>
     <link rel="stylesheet" href="etchStyle.css"> 
 </head>
-<body>
-    <script>
-    window.onload = (event) =>{
-    createGrid(16); }
-</script>
+<body onload = 'createGrid(16)'> 
+    <h1>Try My Etch-a-Sketch!</h1>
     <div class="grid"></div>
     <button onclick= " grid.replaceChildren(), createGrid(promptGridSize())">Change Canvas Size</button>
       
