@@ -22,10 +22,10 @@ function createGrid (gridSize) {
     //rows
     for (let i = 0; i < gridSize; i++){     
       row = document.createElement('div');
-      row.className = ('row'+ i);  
+      row.className = ('row');  
       fragment.appendChild(row);
         //pixels
-        for (let j = 1; j < gridSize; j++){
+        for (let j = 0; j < gridSize; j++){
             pixel = document.createElement('div');
             pixel.className=(`pixel`);
             pixel.addEventListener('mouseover',  handleMouse);                                  
@@ -35,7 +35,10 @@ function createGrid (gridSize) {
     } grid.appendChild(fragment);
     
 }
-
+// set initial 
+window.onload = function() {
+    createGrid(16);
+  };
 
 
 
