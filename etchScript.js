@@ -11,7 +11,7 @@ grid.classList.add('grid');
 //user change canvas size
 function promptGridSize() {
     let size = prompt('Pick your dimensions up to 100');
-    if (size < 100 && size > 1) {
+    if (size <= 100 && size > 1) {
         console.log(size);
         return size;
         
@@ -30,9 +30,8 @@ function handleMouse() {
 }
 //change all pixels back to white
 function shake() {
- for (pixel of document.querySelectorAll('.pixel')) { pixel.style.backgroundColor = 'white'}
-    
-
+ for (pixel of document.querySelectorAll('.pixel')) {
+    pixel.style.backgroundColor = 'white'}
 }
 
 //function to greate grid 
