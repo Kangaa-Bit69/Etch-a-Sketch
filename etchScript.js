@@ -26,13 +26,18 @@ function promptGridSize() {
 
 //mouseover hanldler
 function handleMouse() {
-    this.style.backgroundColor = 'black';
+    let opacity = parseFloat(window.getComputedStyle(this).opacity); 
+    console.log(parseInt(opacity))
+    let newOpacity = this.style.opacity = opacity - 0.2;   
+    console.log(newOpacity)
+    this.style.opacity= newOpacity;
 }
 //change all pixels back to white
 function shake() {
  for (pixel of document.querySelectorAll('.pixel')) {
-    pixel.style.backgroundColor = 'white'}
+    pixel.style.opacity= '1'}
 }
+
 
 //function to greate grid 
 function createGrid (gridSize) {

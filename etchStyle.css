@@ -10,8 +10,9 @@ body {
     min-width: 10px; 
     max-height: 75px;
     max-width: 75px;
-    margin: 1px;      
-    background-color: rgb(255, 255, 255);  
+    margin: 1px;   
+    opacity: 1;  
+    background-color: white; 
       
 }
 
@@ -32,3 +33,8 @@ row {
     justify-content: center;
     align-items: center;
 }
+
+
+--hue: 0;
+--saturation: 0%;
+--lightness: 100%;
