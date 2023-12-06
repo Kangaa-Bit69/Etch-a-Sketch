@@ -16,7 +16,7 @@ window.onload = function() {
 function promptGridSize() {    
     while (true) {
         size = prompt('Pick your dimensions up to 100');
-        if (size < 100 && size > 1) { 
+        if (size <= 100 && size > 1) { 
         return size;                           
      } else confirm('Enter a number between 1 and 100');  
   }
