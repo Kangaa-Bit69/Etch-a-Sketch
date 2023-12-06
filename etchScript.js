@@ -7,23 +7,21 @@ const pixels = document.querySelectorAll('.pixel');
 div.classList.add('div');
 grid.classList.add('grid');
 
+// set initial grid
+window.onload = function() {
+    createGrid(16);
+  };
 
 //user change canvas size
-function promptGridSize() {
-    let size = prompt('Pick your dimensions up to 100');
-    if (size <= 100 && size > 1) {
-        console.log(size);
-        return size;
-        
-    } else {
-        console.log('Out of Range');
-        if (confirm('Enter a number between 1 and 100')) promptGridSize();
-        return size;
-        
-        
-    }
+function promptGridSize() {    
+    while (true) {
+        size = prompt('Pick your dimensions up to 100');
+        if (size < 100 && size > 1) { 
+        return size;                           
+     } else confirm('Enter a number between 1 and 100');  
+  }
 }
-
+ 
 //mouseover hanldler
 function handleMouse() {
     let opacity = parseFloat(window.getComputedStyle(this).opacity); 
@@ -37,7 +35,6 @@ function shake() {
  for (pixel of document.querySelectorAll('.pixel')) {
     pixel.style.opacity= '1'}
 }
-
 
 //function to greate grid 
 function createGrid (gridSize) {
@@ -58,11 +55,6 @@ function createGrid (gridSize) {
     } grid.appendChild(fragment); 
     
 }
-// set initial grid
-window.onload = function() {
-    createGrid(16);
-  };
-
 
 
 

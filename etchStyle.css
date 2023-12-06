@@ -16,8 +16,12 @@ body {
       
 }
 
+button {
+    margin-top: 20px;
+}
 h1 {
     color: white;
+    font-family: fantasy;
 }
 row {
     display: flex;
