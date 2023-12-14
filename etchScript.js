@@ -15,10 +15,12 @@ window.onload = function() {
 //user change canvas size
 function promptGridSize() {    
     while (true) {
-        size = prompt('Pick your dimensions up to 100');
+        let size = prompt('Pick your dimensions up to 100');
         if (size <= 100 && size > 1) { 
-        return size;                           
-     } else confirm('Enter a number between 1 and 100');  
+            return size;                           
+     } else {
+        confirm('Enter a number between 1 and 100');  
+    }
   }
 }
  
